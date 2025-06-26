@@ -28,5 +28,6 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@v7.4.0 # x-release-please-version
         env:
+          FILTER_REGEX_INCLUDE: .java
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
